@@ -1,0 +1,4 @@
+id,mobile_number,created_at,platform,email_id,device_id,name,dob,gender,address,city,ip
+11,9234561234,2021-06-21 09:24:00,android,user001@xyz.com,D001,Satish,1998-02-13,male,Gr. Noida,Gautam Buddha Nagar,192.168.23.56
+12,9326456791,2022-06-22 10:25:00,ios,user002@xyz.com,D002,Siri,1999-05-22,female,New Delhi,Delhi,192.168.21.22
+13,9647315893,2021-06-22 13:45:00,pc,user003@xyz.com,D003,Ashish,1997-02-01,male,New Delhi,Delhi,192.168.23.67
