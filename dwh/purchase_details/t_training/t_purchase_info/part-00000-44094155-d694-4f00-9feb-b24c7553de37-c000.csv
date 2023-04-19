@@ -1,0 +1,4 @@
+id,mobile_number,transaction_id,created_at,platform,course_id_purchased,gateway,bank_id,payment_method,status_id,ip,updated_at
+12,9326456791,10000234,2021-06-27T17:24:13.000+05:30,ios,C0023,apple,BNK001,CC,completed,192.168.21.27,2023-03-10T11:34:50.000+05:30
+11,9234561234,10000567,2021-06-27T22:24:15.000+05:30,android,C0028,gpay,BNK005,NB,in progress,192.168.23.56,2023-03-10T11:34:50.000+05:30
+13,9647315893,10000599,2021-06-29T09:36:09.000+05:30,pc,C0026,pg,BNK004,DC,pending,192.168.23.67,2023-03-10T11:34:50.000+05:30

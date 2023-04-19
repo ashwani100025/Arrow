@@ -13,6 +13,10 @@ def extract(row):
 	return df
 
 def load(df, row):
+	pt_list = []
+	for pt_col in row["partition_strategy"]:
+		pt_list.append(pt_col)
+		
 	save_path = row["target_db_url"].split('|')[0] + '/' + row["target_db_name"]+ '/' + row["target_object_name"]
 
 	if(row["cdc_type"]=="F"):
@@ -32,9 +36,7 @@ def load(df, row):
 					.mode(write_mode) \
 					.save(save_path)
 			else:
-				pt_list = []
-				for pt_col in row["partition_strategy"]:
-					pt_list.append(pt_col)
+				
 				df.write \
 					.format(row["target_db_url"].split('|')[1]) \
 					.option("header",True) \

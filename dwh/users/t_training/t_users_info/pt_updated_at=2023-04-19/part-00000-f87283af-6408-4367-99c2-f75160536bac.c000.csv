@@ -1,0 +1,5 @@
+id,mobile_number,created_at,platform,email_id,device_id,name,dob,gender,address,city,ip,updated_at
+15,8833442178,2021-06-24T10:25:01.000+05:30,ios,user223@xyz.com,D024,Manisha,1999-05-25,female,bangaluru,bangaluru,192.168.21.21,2023-04-19T12:20:06.000+05:30
+14,8866746332,2021-07-23T09:24:23.000+05:30,ios,user334@xyz.com,D023,Manish,1998-01-24,male,mumbai,mumbai,192.168.23.54,2023-04-19T12:20:06.000+05:30
+12,9326456791,2021-06-22T10:25:01.000+05:30,ios,user002@xyz.com,D002,Siri,1999-05-22,female,mumbai,mumbai,192.168.21.22,2023-04-19T12:01:39.000+05:30
+13,9647315893,2021-06-22T13:45:29.000+05:30,pc,user003@xyz.com,DVID99999,Ashish,1997-02-01,male,bangaluru,bangaluru,192.168.23.67,2023-04-19T12:14:08.000+05:30

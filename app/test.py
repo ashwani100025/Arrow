@@ -21,48 +21,52 @@ count_val = spark.read \
 print(type(count_val))'''
 
 print('\n\n\n')
-df = spark.read.option("header",True).csv('file:///home/ashwani/Documents/Ashwani/users.csv')
 
-pt_list = ['created_at', 'platform', 'city']
+df = spark.read.csv("file:///home/ashwani/Documents/Ashwani/Arrow/dwh/users2.csv", header=True, inferSchema=True)
+df.show()
+
+pt_list = ['created_at']
+
 
 partitions = df.select(pt_list).distinct()
 partitions.show()
 n = len(partitions.columns)
-
-max_val = df.select(max('created_at')).first()[0]
-print(type(max_val))
-
+print(n)
 lol_partition = partitions.collect()
 
-'''
-query = 'ALTER TABLE bronze.cp_user_status ADD IF NOT EXISTS '
-
-for ptn in lol_partition:
-	query += 'PARTITION ('
-	for j in range(n):
-		if j == (n-1):
-			query += f"'{pt_list[j]}'='{ptn[j]}') "
-			continue
-		query += f"'{pt_list[j]}'='{ptn[j]}', "
-	
-'''
-
-
-query = 'SELECT count(*) FROM bronze.cp_user_status WHERE ( '
-		
+base_path = "file:///home/ashwani/Documents/Ashwani/Arrow/dwh/users/t_training/t_users_info/"
+path = ""
+load_path_list = []
 for i,ptn in enumerate(lol_partition):
-	if i > 0:
-		query += 'OR ('
-	else:
-		query += '('
 	for j in range(n):
-		if j == (n-1):
-			query += f"{pt_list[j]} = '{ptn[j]}') "
-			continue
-		query += f"{pt_list[j]} = '{ptn[j]}' AND "
+		
+		path = f"{pt_list[j]} = {ptn[j]}/* "
+		
+		load_path_list.append(base_path+path)
 
-query += ') AND updated_at > 1667766345'
+print(load_path_list)
 
-print(query)
+'''
+'file:///home/ashwani/Documents/Ashwani/Arrow/dwh/users/t_training/t_users_info/created_at = 2021-06-22 13:45:00/*',
+'file:///home/ashwani/Documents/Ashwani/Arrow/dwh/users/t_training/t_users_info/created_at = 2022-06-22 10:25:00/*',
+'file:///home/ashwani/Documents/Ashwani/Arrow/dwh/users/t_training/t_users_info/created_at = 2021-06-21 09:24:00/*'
+'''
 
+
+'''
+df = spark.read \
+	.option("header", True) \
+	.option("inferSchema", True) \
+	.format("csv") \
+	.load(["file:///home/ashwani/Documents/Ashwani/Arrow/dwh/users/t_training/t_users_info/pt_updated_at=2023-04-05/*",
+		   'file:///home/ashwani/Documents/Ashwani/Arrow/dwh/users/t_training/t_users_info/pt_updated_at=2023-04-06/*',
+		   'file:///home/ashwani/Documents/Ashwani/Arrow/dwh/users/t_training/t_users_info/pt_updated_at=2023-04-07/*',
+		   'file:///home/ashwani/Documents/Ashwani/Arrow/dwh/users/t_training/t_users_info/pt_updated_at=2023-04-08/*',
+		   'file:///home/ashwani/Documents/Ashwani/Arrow/dwh/users/t_training/t_users_info/pt_updated_at=2023-04-19/*'
+		  ])
+
+
+df.show()
+
+'''
 

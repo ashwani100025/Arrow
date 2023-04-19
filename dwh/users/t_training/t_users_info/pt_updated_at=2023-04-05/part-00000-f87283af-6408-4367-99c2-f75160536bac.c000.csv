@@ -1,0 +1,3 @@
+id,mobile_number,created_at,platform,email_id,device_id,name,dob,gender,address,city,ip,updated_at
+2,9856732102,2020-11-10T23:45:00.000+05:30,mac,dev@gmail.com,DVID963145,Dev,2000-01-12,male,bengaluru,bengaluru,192.168.21.22,2023-04-05T10:51:24.000+05:30
+1,9856741236,2020-09-10T21:47:00.000+05:30,android,paarth@gmail.com,DVID875412,Paarth,2010-01-23,male,mumbai,mumbai,192.168.11.10,2023-04-05T10:51:24.000+05:30
