@@ -18,7 +18,7 @@ def load(df, row):
 	if(row["cdc_type"]=="F"):
 		write_mode='overwrite'
 	if(row["cdc_type"]=="I"):
-		write_mode='overwrite'
+		write_mode='append'
 	if(row["cdc_type"]=="U"):
 		print("Upsert in filesystem NOT supported")
 		res = False

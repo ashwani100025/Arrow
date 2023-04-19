@@ -79,12 +79,12 @@ def get_workoad():
 				'target_db_name'				:		't_training',
 				'target_db_url'					:		'file:///home/ashwani/Documents/Ashwani/Arrow/dwh/users|csv',
 				'is_ever_success'				:		1,
-				'cdc_type'						:		'I',
+				'cdc_type'						:		'F',
 				'cdc_column'					:		'updated_at',
 				'partition_strategy'			:		{
 															'pt_updated_at'	:	"to_date('updated_at')"
 														},
-				'cdc_column_max_value'			:		'2023-04-19 12:01:39',
+				'cdc_column_max_value'			:		None,
 				'create_table_ddl'				:		'query'
 			},
 			{
