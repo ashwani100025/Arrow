@@ -1,0 +1,3 @@
+id,mobile_number,created_at,platform,email_id,device_id,name,dob,gender,address,city,ip,updated_at
+12,9326456791,2023-04-19T12:01:39.000+05:30,ios,user002@xyz.com,D002,Siri,1999-05-22T00:00:00.000+05:30,female,mumbai,mumbai,192.168.21.22,2023-04-20T10:03:19.000+05:30
+13,9647315893,2023-04-19T12:14:08.000+05:30,pc,user003@xyz.com,DVID99999,Ashish,1997-02-01T00:00:00.000+05:30,male,bangaluru,bangaluru,192.168.23.67,2023-04-20T10:03:19.000+05:30

@@ -1,4 +1,0 @@
-id,mobile_number,created_at,platform,email_id,device_id,name,dob,gender,address,city,ip,updated_at
-10,7569820001,2020-06-24T06:52:00.000+05:30,pc,thea@gmail.com,DVID759214,Thea,2005-06-26,female,delhi,delhi,192.168.14.12,2023-04-08T11:35:50.000+05:30
-9,8569742357,2020-11-10T22:21:00.000+05:30,ios,adi@gmail.com,DVID896503,Adi,2008-08-10,male,mumbai,mumbai,192.168.12.9,2023-04-08T11:35:50.000+05:30
-11,9234561234,2021-06-21T09:24:23.000+05:30,android,user001@xyz.com,D001,Satish,1998-02-13,male,delhi,delhi,192.168.23.56,2023-04-08T12:01:39.000+05:30

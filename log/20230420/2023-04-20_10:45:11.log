@@ -1,0 +1,4 @@
+2023-04-20 10:45:11,863 Entered in main
+2023-04-20 10:45:11,863 ################# calling for row 0 #################
+2023-04-20 10:45:11,879 cdc_column_max_value SHOULD NOT BE NULL for 'I' and 'U' cdc_type
+2023-04-20 10:45:11,879 ################# completed for row 0 #################

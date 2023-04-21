@@ -1,0 +1,4 @@
+id,mobile_number,created_at,platform,email_id,device_id,name,dob,gender,address,city,ip,updated_at
+4,7562014248,2023-04-06T11:35:50.000+05:30,android,nikunj@gmail.com,DVID632547,Nikunj,2009-09-03,male,mumbai,mumbai,192.168.13.22,2023-04-20T10:03:19.000+05:30
+5,7854125896,2023-04-06T11:35:50.000+05:30,pc,pranay@gmail.com,DVID982010,Pranay,2001-04-25,male,mumbai,mumbai,192.168.11.15,2023-04-20T10:03:19.000+05:30
+3,8756932011,2023-04-06T11:35:50.000+05:30,mac,nikul@gmail.com,DVID785410,Nikul,2015-03-07,male,delhi,delhi,192.168.20.10,2023-04-20T10:03:19.000+05:30

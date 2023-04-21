@@ -1,0 +1,925 @@
+2023-04-21 19:57:48,105 Entered in main
+2023-04-21 19:57:48,105 ################# calling for row 0 #################
+2023-04-21 19:57:48,128 Command to send: r
+u
+SparkSession$
+rj
+e
+
+2023-04-21 19:57:48,130 Answer received: !ycorg.apache.spark.sql.SparkSession$
+2023-04-21 19:57:48,131 Command to send: r
+m
+org.apache.spark.sql.SparkSession$
+MODULE$
+e
+
+2023-04-21 19:57:48,131 Answer received: !yro30
+2023-04-21 19:57:48,131 Command to send: i
+java.util.HashMap
+e
+
+2023-04-21 19:57:48,132 Answer received: !yao31
+2023-04-21 19:57:48,132 Command to send: c
+o31
+put
+sspark.master
+slocal
+e
+
+2023-04-21 19:57:48,132 Answer received: !yn
+2023-04-21 19:57:48,133 Command to send: c
+o31
+put
+sspark.app.name
+sMySQL Connector
+e
+
+2023-04-21 19:57:48,133 Answer received: !yn
+2023-04-21 19:57:48,133 Command to send: c
+o30
+applyModifiableSettings
+ro27
+ro31
+e
+
+2023-04-21 19:57:48,134 Answer received: !yv
+2023-04-21 19:57:48,137 Command to send: c
+o27
+read
+e
+
+2023-04-21 19:57:48,149 Answer received: !yro32
+2023-04-21 19:57:48,149 Command to send: c
+o32
+format
+sjdbc
+e
+
+2023-04-21 19:57:48,161 Answer received: !yro33
+2023-04-21 19:57:48,161 Command to send: c
+o33
+option
+surl
+sjdbc:mysql://localhost:3306
+e
+
+2023-04-21 19:57:48,163 Answer received: !yro34
+2023-04-21 19:57:48,164 Command to send: c
+o34
+option
+squery
+sSELECT * FROM training.users WHERE updated_at > '2023-04-21 19:17:28' 
+e
+
+2023-04-21 19:57:48,164 Answer received: !yro35
+2023-04-21 19:57:48,164 Command to send: c
+o35
+option
+suser
+sashwani_kr
+e
+
+2023-04-21 19:57:48,165 Answer received: !yro36
+2023-04-21 19:57:48,165 Command to send: c
+o36
+option
+spassword
+sash21may
+e
+
+2023-04-21 19:57:48,165 Answer received: !yro37
+2023-04-21 19:57:48,166 Command to send: c
+o37
+load
+e
+
+2023-04-21 19:57:48,654 Command to send: m
+d
+o29
+e
+
+2023-04-21 19:57:48,654 Answer received: !yv
+2023-04-21 19:57:48,654 Command to send: m
+d
+o31
+e
+
+2023-04-21 19:57:48,655 Answer received: !yv
+2023-04-21 19:57:50,136 Answer received: !yro38
+2023-04-21 19:57:50,136 Command to send: c
+o38
+showString
+i20
+i20
+bFalse
+e
+
+2023-04-21 19:57:52,323 Answer received: !ys+---+-------------+-------------------+--------+------------------+---------+-------+----------+------+---------+---------+-------------+-------------------+\n| id|mobile_number|         created_at|platform|          email_id|device_id|   name|       dob|gender|  address|     city|           ip|         updated_at|\n+---+-------------+-------------------+--------+------------------+---------+-------+----------+------+---------+---------+-------------+-------------------+\n| 17|   4455555412|2023-04-21 14:40:23|     ios|  user4412@xyz.com|     D028|   Monu|1999-05-25|  male|bangaluru|bangaluru|192.168.21.21|2023-04-21 19:20:46|\n| 15|   8833442178|2023-04-19 12:20:06|     ios|   user223@xyz.com|  D006699|Manisha|1999-05-25|female|bangaluru|bangaluru|192.168.21.21|2023-04-21 19:21:15|\n| 14|   8866746332|2023-04-19 12:20:06|     ios|manish.kmr@xyz.com|     D023| Manish|1998-01-24|  male|   mumbai|   mumbai|192.168.23.54|2023-04-21 19:21:15|\n+---+-------------+-------------------+--------+------------------+---------+-------+----------+------+---------+---------+-------------+-------------------+\n
+2023-04-21 19:57:52,324 Command to send: r
+u
+org
+rj
+e
+
+2023-04-21 19:57:52,328 Answer received: !yp
+2023-04-21 19:57:52,328 Command to send: r
+u
+org.apache
+rj
+e
+
+2023-04-21 19:57:52,329 Answer received: !yp
+2023-04-21 19:57:52,329 Command to send: r
+u
+org.apache.spark
+rj
+e
+
+2023-04-21 19:57:52,330 Answer received: !yp
+2023-04-21 19:57:52,330 Command to send: r
+u
+org.apache.spark.storage
+rj
+e
+
+2023-04-21 19:57:52,331 Answer received: !yp
+2023-04-21 19:57:52,332 Command to send: r
+u
+org.apache.spark.storage.StorageLevel
+rj
+e
+
+2023-04-21 19:57:52,332 Answer received: !ycorg.apache.spark.storage.StorageLevel
+2023-04-21 19:57:52,333 Command to send: i
+org.apache.spark.storage.StorageLevel
+bFalse
+bTrue
+bFalse
+bFalse
+i1
+e
+
+2023-04-21 19:57:52,334 Answer received: !yro39
+2023-04-21 19:57:52,335 Command to send: c
+o38
+persist
+ro39
+e
+
+2023-04-21 19:57:52,387 Answer received: !yro40
+2023-04-21 19:57:52,387 Command to send: c
+o38
+count
+e
+
+2023-04-21 19:57:52,657 Command to send: m
+d
+o40
+e
+
+2023-04-21 19:57:52,658 Answer received: !yv
+2023-04-21 19:57:53,026 Answer received: !yL3
+2023-04-21 19:57:53,043 Command to send: c
+o38
+schema
+e
+
+2023-04-21 19:57:53,044 Answer received: !yro41
+2023-04-21 19:57:53,045 Command to send: c
+o41
+json
+e
+
+2023-04-21 19:57:53,107 Answer received: !ys{"type":"struct","fields":[{"name":"id","type":"integer","nullable":true,"metadata":{"scale":0}},{"name":"mobile_number","type":"long","nullable":true,"metadata":{"scale":0}},{"name":"created_at","type":"timestamp","nullable":true,"metadata":{"scale":0}},{"name":"platform","type":"string","nullable":true,"metadata":{"scale":0}},{"name":"email_id","type":"string","nullable":true,"metadata":{"scale":0}},{"name":"device_id","type":"string","nullable":true,"metadata":{"scale":0}},{"name":"name","type":"string","nullable":true,"metadata":{"scale":0}},{"name":"dob","type":"date","nullable":true,"metadata":{"scale":0}},{"name":"gender","type":"string","nullable":true,"metadata":{"scale":0}},{"name":"address","type":"string","nullable":true,"metadata":{"scale":0}},{"name":"city","type":"string","nullable":true,"metadata":{"scale":0}},{"name":"ip","type":"string","nullable":true,"metadata":{"scale":0}},{"name":"updated_at","type":"timestamp","nullable":true,"metadata":{"scale":0}}]}
+2023-04-21 19:57:53,116 Command to send: r
+u
+functions
+rj
+e
+
+2023-04-21 19:57:53,124 Answer received: !ycorg.apache.spark.sql.functions
+2023-04-21 19:57:53,124 Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+2023-04-21 19:57:53,130 Answer received: !ym
+2023-04-21 19:57:53,130 Command to send: c
+z:org.apache.spark.sql.functions
+col
+screated_at
+e
+
+2023-04-21 19:57:53,167 Answer received: !yro42
+2023-04-21 19:57:53,167 Command to send: r
+u
+functions
+rj
+e
+
+2023-04-21 19:57:53,169 Answer received: !ycorg.apache.spark.sql.functions
+2023-04-21 19:57:53,169 Command to send: r
+m
+org.apache.spark.sql.functions
+to_date
+e
+
+2023-04-21 19:57:53,169 Answer received: !ym
+2023-04-21 19:57:53,169 Command to send: c
+z:org.apache.spark.sql.functions
+to_date
+ro42
+e
+
+2023-04-21 19:57:53,170 Answer received: !yro43
+2023-04-21 19:57:53,171 Command to send: c
+o38
+withColumn
+spt_created_at
+ro43
+e
+
+2023-04-21 19:57:53,196 Answer received: !yro44
+2023-04-21 19:57:53,196 Command to send: c
+o44
+showString
+i20
+i20
+bFalse
+e
+
+2023-04-21 19:57:53,462 Answer received: !ys+---+-------------+-------------------+--------+------------------+---------+-------+----------+------+---------+---------+-------------+-------------------+-------------+\n| id|mobile_number|         created_at|platform|          email_id|device_id|   name|       dob|gender|  address|     city|           ip|         updated_at|pt_created_at|\n+---+-------------+-------------------+--------+------------------+---------+-------+----------+------+---------+---------+-------------+-------------------+-------------+\n| 17|   4455555412|2023-04-21 14:40:23|     ios|  user4412@xyz.com|     D028|   Monu|1999-05-25|  male|bangaluru|bangaluru|192.168.21.21|2023-04-21 19:20:46|   2023-04-21|\n| 15|   8833442178|2023-04-19 12:20:06|     ios|   user223@xyz.com|  D006699|Manisha|1999-05-25|female|bangaluru|bangaluru|192.168.21.21|2023-04-21 19:21:15|   2023-04-19|\n| 14|   8866746332|2023-04-19 12:20:06|     ios|manish.kmr@xyz.com|     D023| Manish|1998-01-24|  male|   mumbai|   mumbai|192.168.23.54|2023-04-21 19:21:15|   2023-04-19|\n+---+-------------+-------------------+--------+------------------+---------+-------+----------+------+---------+---------+-------------+-------------------+-------------+\n
+2023-04-21 19:57:53,462 Command to send: r
+u
+org
+rj
+e
+
+2023-04-21 19:57:53,464 Answer received: !yp
+2023-04-21 19:57:53,465 Command to send: r
+u
+org.apache
+rj
+e
+
+2023-04-21 19:57:53,465 Answer received: !yp
+2023-04-21 19:57:53,466 Command to send: r
+u
+org.apache.spark
+rj
+e
+
+2023-04-21 19:57:53,466 Answer received: !yp
+2023-04-21 19:57:53,466 Command to send: r
+u
+org.apache.spark.storage
+rj
+e
+
+2023-04-21 19:57:53,467 Answer received: !yp
+2023-04-21 19:57:53,467 Command to send: r
+u
+org.apache.spark.storage.StorageLevel
+rj
+e
+
+2023-04-21 19:57:53,467 Answer received: !ycorg.apache.spark.storage.StorageLevel
+2023-04-21 19:57:53,467 Command to send: i
+org.apache.spark.storage.StorageLevel
+bFalse
+bTrue
+bFalse
+bFalse
+i1
+e
+
+2023-04-21 19:57:53,467 Answer received: !yro45
+2023-04-21 19:57:53,467 Command to send: c
+o44
+persist
+ro45
+e
+
+2023-04-21 19:57:53,517 Answer received: !yro46
+2023-04-21 19:57:53,517 Command to send: c
+o44
+count
+e
+
+2023-04-21 19:57:53,659 Command to send: m
+d
+o28
+e
+
+2023-04-21 19:57:53,667 Answer received: !yv
+2023-04-21 19:57:53,667 Command to send: m
+d
+o30
+e
+
+2023-04-21 19:57:53,667 Answer received: !yv
+2023-04-21 19:57:53,668 Command to send: m
+d
+o32
+e
+
+2023-04-21 19:57:53,668 Answer received: !yv
+2023-04-21 19:57:53,668 Command to send: m
+d
+o33
+e
+
+2023-04-21 19:57:53,668 Answer received: !yv
+2023-04-21 19:57:53,669 Command to send: m
+d
+o34
+e
+
+2023-04-21 19:57:53,669 Answer received: !yv
+2023-04-21 19:57:53,669 Command to send: m
+d
+o35
+e
+
+2023-04-21 19:57:53,669 Answer received: !yv
+2023-04-21 19:57:53,669 Command to send: m
+d
+o36
+e
+
+2023-04-21 19:57:53,669 Answer received: !yv
+2023-04-21 19:57:53,669 Command to send: m
+d
+o37
+e
+
+2023-04-21 19:57:53,669 Answer received: !yv
+2023-04-21 19:57:53,670 Command to send: m
+d
+o39
+e
+
+2023-04-21 19:57:53,670 Answer received: !yv
+2023-04-21 19:57:53,670 Command to send: m
+d
+o41
+e
+
+2023-04-21 19:57:53,670 Answer received: !yv
+2023-04-21 19:57:53,670 Command to send: m
+d
+o46
+e
+
+2023-04-21 19:57:53,670 Answer received: !yv
+2023-04-21 19:57:53,703 Answer received: !yL3
+2023-04-21 19:57:53,716 Command to send: r
+u
+SparkSession$
+rj
+e
+
+2023-04-21 19:57:53,717 Answer received: !ycorg.apache.spark.sql.SparkSession$
+2023-04-21 19:57:53,718 Command to send: r
+m
+org.apache.spark.sql.SparkSession$
+MODULE$
+e
+
+2023-04-21 19:57:53,718 Answer received: !yro47
+2023-04-21 19:57:53,718 Command to send: i
+java.util.HashMap
+e
+
+2023-04-21 19:57:53,718 Answer received: !yao48
+2023-04-21 19:57:53,718 Command to send: c
+o48
+put
+sspark.master
+slocal
+e
+
+2023-04-21 19:57:53,719 Answer received: !yn
+2023-04-21 19:57:53,719 Command to send: c
+o48
+put
+sspark.app.name
+sfilesystem conncector
+e
+
+2023-04-21 19:57:53,719 Answer received: !yn
+2023-04-21 19:57:53,719 Command to send: c
+o47
+applyModifiableSettings
+ro27
+ro48
+e
+
+2023-04-21 19:57:53,720 Answer received: !yv
+2023-04-21 19:57:53,720 Command to send: r
+u
+functions
+rj
+e
+
+2023-04-21 19:57:53,722 Answer received: !ycorg.apache.spark.sql.functions
+2023-04-21 19:57:53,722 Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+2023-04-21 19:57:53,723 Answer received: !ym
+2023-04-21 19:57:53,723 Command to send: c
+z:org.apache.spark.sql.functions
+col
+spt_created_at
+e
+
+2023-04-21 19:57:53,723 Answer received: !yro49
+2023-04-21 19:57:53,723 Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-04-21 19:57:53,725 Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-04-21 19:57:53,726 Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-04-21 19:57:53,727 Answer received: !ym
+2023-04-21 19:57:53,727 Command to send: i
+java.util.ArrayList
+e
+
+2023-04-21 19:57:53,728 Answer received: !ylo50
+2023-04-21 19:57:53,728 Command to send: c
+o50
+add
+ro49
+e
+
+2023-04-21 19:57:53,730 Answer received: !ybtrue
+2023-04-21 19:57:53,730 Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro50
+e
+
+2023-04-21 19:57:53,732 Answer received: !yro51
+2023-04-21 19:57:53,732 Command to send: c
+o44
+select
+ro51
+e
+
+2023-04-21 19:57:53,739 Answer received: !yro52
+2023-04-21 19:57:53,739 Command to send: c
+o52
+distinct
+e
+
+2023-04-21 19:57:53,750 Answer received: !yro53
+2023-04-21 19:57:53,751 Command to send: c
+o53
+showString
+i20
+i20
+bFalse
+e
+
+2023-04-21 19:57:54,194 Answer received: !ys+-------------+\n|pt_created_at|\n+-------------+\n|   2023-04-21|\n|   2023-04-19|\n+-------------+\n
+2023-04-21 19:57:54,194 Command to send: c
+o53
+schema
+e
+
+2023-04-21 19:57:54,195 Answer received: !yro54
+2023-04-21 19:57:54,195 Command to send: c
+o54
+json
+e
+
+2023-04-21 19:57:54,196 Answer received: !ys{"type":"struct","fields":[{"name":"pt_created_at","type":"date","nullable":true,"metadata":{}}]}
+2023-04-21 19:57:54,199 Command to send: c
+o16
+setCallSite
+scollect at /home/ashwani/Documents/Ashwani/Arrow/connector/filesystem_connector.py:56
+e
+
+2023-04-21 19:57:54,200 Answer received: !yv
+2023-04-21 19:57:54,200 Command to send: c
+o53
+collectToPython
+e
+
+2023-04-21 19:57:54,444 Answer received: !yto55
+2023-04-21 19:57:54,445 Command to send: c
+o16
+setCallSite
+n
+e
+
+2023-04-21 19:57:54,447 Answer received: !yv
+2023-04-21 19:57:54,447 Command to send: a
+e
+o55
+e
+
+2023-04-21 19:57:54,448 Answer received: !yi3
+2023-04-21 19:57:54,448 Command to send: a
+g
+o55
+i0
+e
+
+2023-04-21 19:57:54,449 Answer received: !yi43527
+2023-04-21 19:57:54,449 Command to send: a
+e
+o55
+e
+
+2023-04-21 19:57:54,449 Answer received: !yi3
+2023-04-21 19:57:54,449 Command to send: a
+g
+o55
+i1
+e
+
+2023-04-21 19:57:54,449 Answer received: !ys06b1eec48b33ed2c217a02f7e2b5f8e66e3e97d582450c2bff8606f38486275f
+2023-04-21 19:57:54,461 Command to send: c
+o27
+read
+e
+
+2023-04-21 19:57:54,463 Answer received: !yro56
+2023-04-21 19:57:54,463 Command to send: c
+o56
+option
+sheader
+strue
+e
+
+2023-04-21 19:57:54,464 Answer received: !yro57
+2023-04-21 19:57:54,464 Command to send: c
+o57
+option
+sinferSchema
+strue
+e
+
+2023-04-21 19:57:54,465 Answer received: !yro58
+2023-04-21 19:57:54,465 Command to send: c
+o58
+format
+scsv
+e
+
+2023-04-21 19:57:54,467 Answer received: !yro59
+2023-04-21 19:57:54,467 Command to send: r
+u
+PythonUtils
+rj
+e
+
+2023-04-21 19:57:54,470 Answer received: !ycorg.apache.spark.api.python.PythonUtils
+2023-04-21 19:57:54,470 Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+2023-04-21 19:57:54,471 Answer received: !ym
+2023-04-21 19:57:54,471 Command to send: i
+java.util.ArrayList
+e
+
+2023-04-21 19:57:54,472 Answer received: !ylo60
+2023-04-21 19:57:54,472 Command to send: c
+o60
+add
+sfile:///home/ashwani/Documents/Ashwani/Arrow/dwh/users/t_training/t_users_info/pt_created_at=2023-04-21/*
+e
+
+2023-04-21 19:57:54,473 Answer received: !ybtrue
+2023-04-21 19:57:54,473 Command to send: c
+o60
+add
+sfile:///home/ashwani/Documents/Ashwani/Arrow/dwh/users/t_training/t_users_info/pt_created_at=2023-04-19/*
+e
+
+2023-04-21 19:57:54,473 Answer received: !ybtrue
+2023-04-21 19:57:54,473 Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro60
+e
+
+2023-04-21 19:57:54,474 Answer received: !yro61
+2023-04-21 19:57:54,474 Command to send: c
+o59
+load
+ro61
+e
+
+2023-04-21 19:57:54,671 Command to send: m
+d
+o48
+e
+
+2023-04-21 19:57:54,672 Answer received: !yv
+2023-04-21 19:57:54,672 Command to send: m
+d
+o50
+e
+
+2023-04-21 19:57:54,672 Answer received: !yv
+2023-04-21 19:57:54,672 Command to send: m
+d
+o55
+e
+
+2023-04-21 19:57:54,672 Answer received: !yv
+2023-04-21 19:57:54,672 Command to send: m
+d
+o60
+e
+
+2023-04-21 19:57:54,673 Answer received: !yv
+2023-04-21 19:57:55,400 Answer received: !yro62
+2023-04-21 19:57:55,401 Command to send: r
+u
+functions
+rj
+e
+
+2023-04-21 19:57:55,404 Answer received: !ycorg.apache.spark.sql.functions
+2023-04-21 19:57:55,404 Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+2023-04-21 19:57:55,404 Answer received: !ym
+2023-04-21 19:57:55,405 Command to send: c
+z:org.apache.spark.sql.functions
+col
+screated_at
+e
+
+2023-04-21 19:57:55,405 Answer received: !yro63
+2023-04-21 19:57:55,405 Command to send: r
+u
+functions
+rj
+e
+
+2023-04-21 19:57:55,408 Answer received: !ycorg.apache.spark.sql.functions
+2023-04-21 19:57:55,408 Command to send: r
+m
+org.apache.spark.sql.functions
+to_date
+e
+
+2023-04-21 19:57:55,409 Answer received: !ym
+2023-04-21 19:57:55,409 Command to send: c
+z:org.apache.spark.sql.functions
+to_date
+ro63
+e
+
+2023-04-21 19:57:55,409 Answer received: !yro64
+2023-04-21 19:57:55,410 Command to send: c
+o62
+withColumn
+spt_created_at
+ro64
+e
+
+2023-04-21 19:57:55,427 Answer received: !yro65
+2023-04-21 19:57:55,428 Command to send: c
+o65
+showString
+i20
+i20
+bFalse
+e
+
+2023-04-21 19:57:55,647 Answer received: !ys+---+-------------+-------------------+--------+---------------+---------+-------+-------------------+------+---------+---------+-------------+-------------------+-------------+\n| id|mobile_number|         created_at|platform|       email_id|device_id|   name|                dob|gender|  address|     city|           ip|         updated_at|pt_created_at|\n+---+-------------+-------------------+--------+---------------+---------+-------+-------------------+------+---------+---------+-------------+-------------------+-------------+\n| 15|   8833442178|2023-04-19 12:20:06|     ios|user223@xyz.com|     D024|Manisha|1999-05-25 00:00:00|female|bangaluru|bangaluru|192.168.21.21|2023-04-21 19:16:13|   2023-04-19|\n| 14|   8866746332|2023-04-19 12:20:06|     ios|user334@xyz.com|     D023| Manish|1998-01-24 00:00:00|  male|   mumbai|   mumbai|192.168.23.54|2023-04-21 19:16:13|   2023-04-19|\n| 12|   9326456791|2023-04-19 12:01:39|     ios|user002@xyz.com|     D002|   Siri|1999-05-22 00:00:00|female|   mumbai|   mumbai|192.168.21.22|2023-04-20 10:03:19|   2023-04-19|\n| 13|   9647315893|2023-04-19 12:14:08|      pc|user003@xyz.com|DVID99999| Ashish|1997-02-01 00:00:00|  male|bangaluru|bangaluru|192.168.23.67|2023-04-20 10:03:19|   2023-04-19|\n| 16|   4455778636|2023-04-21 14:40:23| android|user884@xyz.com|     D026|   Sonu|1998-01-24 00:00:00|  male|   mumbai|   mumbai|192.168.23.54|2023-04-21 19:17:28|   2023-04-21|\n+---+-------------+-------------------+--------+---------------+---------+-------+-------------------+------+---------+---------+-------------+-------------------+-------------+\n
+2023-04-21 19:57:55,647 Command to send: c
+o44
+createOrReplaceTempView
+stmp_users
+e
+
+2023-04-21 19:57:55,716 Answer received: !yv
+2023-04-21 19:57:55,716 Command to send: c
+o65
+createOrReplaceTempView
+stmp_t_users_info
+e
+
+2023-04-21 19:57:55,725 Answer received: !yv
+2023-04-21 19:57:55,726 Command to send: c
+o27
+sql
+sSELECT * FROM tmp_users
+e
+
+2023-04-21 19:57:55,790 Answer received: !yro66
+2023-04-21 19:57:55,791 Command to send: c
+o66
+showString
+i20
+i20
+bFalse
+e
+
+2023-04-21 19:57:56,006 Answer received: !ys+---+-------------+-------------------+--------+------------------+---------+-------+----------+------+---------+---------+-------------+-------------------+-------------+\n| id|mobile_number|         created_at|platform|          email_id|device_id|   name|       dob|gender|  address|     city|           ip|         updated_at|pt_created_at|\n+---+-------------+-------------------+--------+------------------+---------+-------+----------+------+---------+---------+-------------+-------------------+-------------+\n| 17|   4455555412|2023-04-21 14:40:23|     ios|  user4412@xyz.com|     D028|   Monu|1999-05-25|  male|bangaluru|bangaluru|192.168.21.21|2023-04-21 19:20:46|   2023-04-21|\n| 15|   8833442178|2023-04-19 12:20:06|     ios|   user223@xyz.com|  D006699|Manisha|1999-05-25|female|bangaluru|bangaluru|192.168.21.21|2023-04-21 19:21:15|   2023-04-19|\n| 14|   8866746332|2023-04-19 12:20:06|     ios|manish.kmr@xyz.com|     D023| Manish|1998-01-24|  male|   mumbai|   mumbai|192.168.23.54|2023-04-21 19:21:15|   2023-04-19|\n+---+-------------+-------------------+--------+------------------+---------+-------+----------+------+---------+---------+-------------+-------------------+-------------+\n
+2023-04-21 19:57:56,007 Command to send: c
+o27
+sql
+sSELECT * FROM tmp_t_users_info
+e
+
+2023-04-21 19:57:56,019 Answer received: !yro67
+2023-04-21 19:57:56,020 Command to send: c
+o67
+showString
+i20
+i20
+bFalse
+e
+
+2023-04-21 19:57:56,180 Answer received: !ys+---+-------------+-------------------+--------+---------------+---------+-------+-------------------+------+---------+---------+-------------+-------------------+-------------+\n| id|mobile_number|         created_at|platform|       email_id|device_id|   name|                dob|gender|  address|     city|           ip|         updated_at|pt_created_at|\n+---+-------------+-------------------+--------+---------------+---------+-------+-------------------+------+---------+---------+-------------+-------------------+-------------+\n| 15|   8833442178|2023-04-19 12:20:06|     ios|user223@xyz.com|     D024|Manisha|1999-05-25 00:00:00|female|bangaluru|bangaluru|192.168.21.21|2023-04-21 19:16:13|   2023-04-19|\n| 14|   8866746332|2023-04-19 12:20:06|     ios|user334@xyz.com|     D023| Manish|1998-01-24 00:00:00|  male|   mumbai|   mumbai|192.168.23.54|2023-04-21 19:16:13|   2023-04-19|\n| 12|   9326456791|2023-04-19 12:01:39|     ios|user002@xyz.com|     D002|   Siri|1999-05-22 00:00:00|female|   mumbai|   mumbai|192.168.21.22|2023-04-20 10:03:19|   2023-04-19|\n| 13|   9647315893|2023-04-19 12:14:08|      pc|user003@xyz.com|DVID99999| Ashish|1997-02-01 00:00:00|  male|bangaluru|bangaluru|192.168.23.67|2023-04-20 10:03:19|   2023-04-19|\n| 16|   4455778636|2023-04-21 14:40:23| android|user884@xyz.com|     D026|   Sonu|1998-01-24 00:00:00|  male|   mumbai|   mumbai|192.168.23.54|2023-04-21 19:17:28|   2023-04-21|\n+---+-------------+-------------------+--------+---------------+---------+-------+-------------------+------+---------+---------+-------------+-------------------+-------------+\n
+2023-04-21 19:57:56,181 Command to send: c
+o27
+sql
+s(SELECT t.* FROM tmp_t_users_info t LEFT JOIN tmp_users s ON t.id = s.id WHERE s.id is NULL))
+e
+
+2023-04-21 19:57:56,294 Answer received: !xro68
+2023-04-21 19:57:56,294 Command to send: r
+u
+py4j
+rj
+e
+
+2023-04-21 19:57:56,297 Answer received: !yp
+2023-04-21 19:57:56,297 Command to send: r
+u
+py4j.reflection
+rj
+e
+
+2023-04-21 19:57:56,298 Answer received: !yp
+2023-04-21 19:57:56,298 Command to send: r
+u
+py4j.reflection.TypeUtil
+rj
+e
+
+2023-04-21 19:57:56,298 Answer received: !ycpy4j.reflection.TypeUtil
+2023-04-21 19:57:56,298 Command to send: r
+m
+py4j.reflection.TypeUtil
+isInstanceOf
+e
+
+2023-04-21 19:57:56,299 Answer received: !ym
+2023-04-21 19:57:56,299 Command to send: c
+z:py4j.reflection.TypeUtil
+isInstanceOf
+sorg.apache.spark.sql.catalyst.parser.ParseException
+ro68
+e
+
+2023-04-21 19:57:56,299 Answer received: !ybtrue
+2023-04-21 19:57:56,299 Command to send: c
+o68
+getMessage
+e
+
+2023-04-21 19:57:56,300 Answer received: !ys\nSyntax error at or near ')': extra input ')'(line 1, pos 92)\n\n== SQL ==\n(SELECT t.* FROM tmp_t_users_info t LEFT JOIN tmp_users s ON t.id = s.id WHERE s.id is NULL))\n--------------------------------------------------------------------------------------------^^^\n
+2023-04-21 19:57:56,300 Command to send: r
+u
+org
+rj
+e
+
+2023-04-21 19:57:56,303 Answer received: !yp
+2023-04-21 19:57:56,303 Command to send: r
+u
+org.apache
+rj
+e
+
+2023-04-21 19:57:56,304 Answer received: !yp
+2023-04-21 19:57:56,304 Command to send: r
+u
+org.apache.spark
+rj
+e
+
+2023-04-21 19:57:56,304 Answer received: !yp
+2023-04-21 19:57:56,304 Command to send: r
+u
+org.apache.spark.util
+rj
+e
+
+2023-04-21 19:57:56,305 Answer received: !yp
+2023-04-21 19:57:56,305 Command to send: r
+u
+org.apache.spark.util.Utils
+rj
+e
+
+2023-04-21 19:57:56,305 Answer received: !ycorg.apache.spark.util.Utils
+2023-04-21 19:57:56,305 Command to send: r
+m
+org.apache.spark.util.Utils
+exceptionString
+e
+
+2023-04-21 19:57:56,305 Answer received: !ym
+2023-04-21 19:57:56,305 Command to send: c
+z:org.apache.spark.util.Utils
+exceptionString
+ro68
+e
+
+2023-04-21 19:57:56,306 Answer received: !ysorg.apache.spark.sql.catalyst.parser.ParseException: \nSyntax error at or near ')': extra input ')'(line 1, pos 92)\n\n== SQL ==\n(SELECT t.* FROM tmp_t_users_info t LEFT JOIN tmp_users s ON t.id = s.id WHERE s.id is NULL))\n--------------------------------------------------------------------------------------------^^^\n\n	at org.apache.spark.sql.catalyst.parser.ParseException.withCommand(ParseDriver.scala:306)\n	at org.apache.spark.sql.catalyst.parser.AbstractSqlParser.parse(ParseDriver.scala:143)\n	at org.apache.spark.sql.execution.SparkSqlParser.parse(SparkSqlParser.scala:52)\n	at org.apache.spark.sql.catalyst.parser.AbstractSqlParser.parsePlan(ParseDriver.scala:89)\n	at org.apache.spark.sql.SparkSession.$anonfun$sql$2(SparkSession.scala:620)\n	at org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:111)\n	at org.apache.spark.sql.SparkSession.$anonfun$sql$1(SparkSession.scala:620)\n	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:779)\n	at org.apache.spark.sql.SparkSession.sql(SparkSession.scala:617)\n	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n	at java.lang.reflect.Method.invoke(Method.java:498)\n	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)\n	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)\n	at py4j.Gateway.invoke(Gateway.java:282)\n	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)\n	at py4j.commands.CallCommand.execute(CallCommand.java:79)\n	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)\n	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)\n	at java.lang.Thread.run(Thread.java:750)\n
+2023-04-21 19:57:56,307 Command to send: c
+o68
+getCause
+e
+
+2023-04-21 19:57:56,307 Answer received: !yn
+2023-04-21 19:57:56,307 Command to send: r
+u
+org
+rj
+e
+
+2023-04-21 19:57:56,311 Answer received: !yp
+2023-04-21 19:57:56,311 Command to send: r
+u
+org.apache
+rj
+e
+
+2023-04-21 19:57:56,312 Answer received: !yp
+2023-04-21 19:57:56,312 Command to send: r
+u
+org.apache.spark
+rj
+e
+
+2023-04-21 19:57:56,312 Answer received: !yp
+2023-04-21 19:57:56,312 Command to send: r
+u
+org.apache.spark.sql
+rj
+e
+
+2023-04-21 19:57:56,313 Answer received: !yp
+2023-04-21 19:57:56,313 Command to send: r
+u
+org.apache.spark.sql.internal
+rj
+e
+
+2023-04-21 19:57:56,313 Answer received: !yp
+2023-04-21 19:57:56,313 Command to send: r
+u
+org.apache.spark.sql.internal.SQLConf
+rj
+e
+
+2023-04-21 19:57:56,313 Answer received: !ycorg.apache.spark.sql.internal.SQLConf
+2023-04-21 19:57:56,313 Command to send: r
+m
+org.apache.spark.sql.internal.SQLConf
+get
+e
+
+2023-04-21 19:57:56,316 Answer received: !ym
+2023-04-21 19:57:56,316 Command to send: c
+z:org.apache.spark.sql.internal.SQLConf
+get
+e
+
+2023-04-21 19:57:56,316 Answer received: !yro69
+2023-04-21 19:57:56,316 Command to send: c
+o69
+pysparkJVMStacktraceEnabled
+e
+
+2023-04-21 19:57:56,317 Answer received: !ybfalse
+2023-04-21 19:57:56,317 local variable 'res' referenced before assignment
+2023-04-21 19:57:56,317 ################# completed for row 0 #################

@@ -1,0 +1,2 @@
+id,mobile_number,created_at,platform,email_id,device_id,name,dob,gender,address,city,ip,updated_at
+17,4455555412,2023-04-21T14:40:23.000+05:30,ios,user4412@xyz.com,D028,Monu,1999-05-25T00:00:00.000+05:30,male,bangaluru,bangaluru,192.168.21.21,2023-04-21T19:20:46.000+05:30

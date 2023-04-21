@@ -1,0 +1,2 @@
+id,mobile_number,created_at,platform,email_id,device_id,name,dob,gender,address,city,ip,updated_at
+16,4455778636,2023-04-21T14:40:23.000+05:30,android,user884@xyz.com,D026,Sonu,1998-01-24T00:00:00.000+05:30,male,mumbai,mumbai,192.168.23.54,2023-04-21T19:17:28.000+05:30

@@ -22,7 +22,7 @@ print(type(count_val))'''
 
 print('\n\n\n')
 
-df = spark.read.csv("file:///home/ashwani/Documents/Ashwani/Arrow/dwh/users2.csv", header=True, inferSchema=True)
+df = spark.read.csv("file:///home/ashwani/Documents/Ashwani/Arrow/dwh/users2.csv", header=True)
 df.show()
 
 pt_list = ['created_at']
@@ -39,10 +39,13 @@ path = ""
 load_path_list = []
 for i,ptn in enumerate(lol_partition):
 	for j in range(n):
+		if j == n-1:
+			path += f"{pt_list[j]}={ptn[j]}/*"
+		else:
+			path += f"{pt_list[j]}={ptn[j]}/"
 		
-		path = f"{pt_list[j]} = {ptn[j]}/* "
-		
-		load_path_list.append(base_path+path)
+	load_path_list.append(base_path+path)
+	path=""
 
 print(load_path_list)
 
