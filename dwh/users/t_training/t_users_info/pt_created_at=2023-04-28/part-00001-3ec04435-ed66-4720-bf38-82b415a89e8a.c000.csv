@@ -1,0 +1,2 @@
+id,mobile_number,created_at,platform,email_id,device_id,name,dob,gender,address,city,ip,updated_at
+19,9943225742,2023-04-28T14:40:23.000+05:30,ios,user43@xyz.com,D029,Dubey,1999-05-25T00:00:00.000+05:30,male,bangaluru,bangaluru,192.168.21.21,2023-04-28T13:26:36.000+05:30

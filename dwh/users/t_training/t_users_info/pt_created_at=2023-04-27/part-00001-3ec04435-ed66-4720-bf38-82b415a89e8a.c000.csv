@@ -1,0 +1,2 @@
+id,mobile_number,created_at,platform,email_id,device_id,name,dob,gender,address,city,ip,updated_at
+18,9845633743,2023-04-27T14:40:23.000+05:30,android,user44@xyz.com,D027,Jadeja,1998-01-24T00:00:00.000+05:30,male,mumbai,mumbai,192.168.23.54,2023-04-28T13:26:36.000+05:30

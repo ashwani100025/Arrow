@@ -3,7 +3,7 @@ import pyspark
 from pyspark.sql import SparkSession
 
 spark = SparkSession.builder.master("local").appName("filesystem conncector").getOrCreate()
-
+spark.conf.set("spark.sql.files.ignoreMissingFiles", "true")
 def extract(row):
 	df  = spark.read \
 		 .format(row["source_db_url"].split('|')[1]) \
@@ -69,12 +69,32 @@ def load(s_df, row):
 			path=""
 
 		print(load_path_list)
+
+		historical_partition_list = []
+
+		for path in load_path_list:
+			try:
+				tmp_df = spark.read \
+						.option("header", True) \
+						.option("inferSchema", True) \
+						.format("csv") \
+						.load(path)
+				
+				historical_partition_list.append(path)
+			
+			except:
+				print("Path does not exist ", path)
+		
+		print(historical_partition_list)
+
+
+
 		try:
 			t_df = spark.read \
 				.option("header", True) \
 				.option("inferSchema", True) \
 				.format("csv") \
-				.load(load_path_list)
+				.load(historical_partition_list)
 		except Exception as e:
 			print(e)
 		

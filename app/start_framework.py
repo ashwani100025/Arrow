@@ -14,6 +14,8 @@ from datetime import datetime, timedelta
 spark = SparkSession.builder.master("local").appName("Arrow").getOrCreate()
 spark.sparkContext.setLogLevel("ERROR")
 
+spark.conf.set("spark.sql.files.ignoreMissingFiles", "true")
+
 sys.path.append('/home/ashwani/Documents/Ashwani/Arrow')
 import utils.utils as utils
 import engine.spark_engine as engine
@@ -86,7 +88,7 @@ def get_workoad():
 				'partition_strategy'			:		{
 															'pt_created_at'	:	"to_date('created_at')"
 														},
-				'cdc_column_max_value'			:		'2023-04-21 19:17:28',
+				'cdc_column_max_value'			:		'2023-04-21 19:21:15',
 				'create_table_ddl'				:		'query'
 			}]
 

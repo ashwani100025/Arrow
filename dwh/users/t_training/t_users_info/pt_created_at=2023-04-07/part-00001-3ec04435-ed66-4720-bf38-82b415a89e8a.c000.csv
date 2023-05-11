@@ -1,0 +1,2 @@
+id,mobile_number,created_at,platform,email_id,device_id,name,dob,gender,address,city,ip,updated_at
+6,8741036520,2023-04-07T11:35:50.000+05:30,ios,ojas123@gmail.com,DVID687351,Ojas,1998-08-11T00:00:00.000+05:30,male,delhi,delhi,192.168.13.11,2023-04-28T14:23:13.000+05:30

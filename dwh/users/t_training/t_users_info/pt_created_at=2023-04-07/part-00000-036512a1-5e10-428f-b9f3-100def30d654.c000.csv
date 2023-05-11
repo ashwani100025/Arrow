@@ -1,4 +1,0 @@
-id,mobile_number,created_at,platform,email_id,device_id,name,dob,gender,address,city,ip,updated_at
-8,8463201782,2023-04-07T11:35:50.000+05:30,android,ved@gmail.com,DVID873520,Ved,2012-04-19,male,delhi,delhi,192.168.16.8,2023-04-20T10:03:19.000+05:30
-6,8741036520,2023-04-07T11:35:50.000+05:30,ios,ojas@gmail.com,DVID687351,Ojas,1998-08-11,male,delhi,delhi,192.168.13.11,2023-04-20T10:03:19.000+05:30
-7,9658200134,2023-04-07T11:35:50.000+05:30,ios,shiv@gmail.com,DVID687320,Shiv,2017-04-19,male,bangaluru,bangaluru,192.168.18.13,2023-04-20T10:03:19.000+05:30
